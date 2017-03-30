@@ -1,0 +1,16 @@
+sudo yum install gcc gcc-c++ -y
+sudo yum install autoconf automake make -y
+sudo yum install curl -y
+sudo yum install openssl-devel -y
+wget http://nodejs.org/dist/v0.10.17/node-v0.10.17.tar.gz
+tar zxvf node-v0.10.17.tar.gz
+cd node-v0.10.17
+./configure
+
+#6/3/16: This is lengthy, about 10 to 15 minutes of scrolling busyness.
+make
+
+sudo make install
+
+node --version
+

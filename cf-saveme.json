@@ -34,8 +34,8 @@
 "#!/bin/bash -ex\n",
 "echo `whoami` > /tmp/one\n",
 "yum install git -y\n",
-"sudo -u ec2-user bash -c 'cd /home/ec2-user; git clone https://github.com/craigwongva/saveme.git > /tmp/u01 2>&1 '\n",
-"sudo -u ec2-user bash -c '/home/ec2-user/saveme/userdata-saveme > /tmp/u03 2>&1'\n"
+"sudo -u ec2-user bash -c 'cd /home/ec2-user; git clone -b nodejs https://github.com/craigwongva/saveme.git > /tmp/u01 2>&1 '\n",
+"sudo -u ec2-user bash -c '/home/ec2-user/saveme/userdata-nodejs > /tmp/u03 2>&1'\n"
      ]
     ]}}
    }

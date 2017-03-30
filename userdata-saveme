@@ -1,9 +1,0 @@
-##
-#
-# Untar saveme.tar
-##
-cd /home/ec2-user                           > /tmp/1700 2>&1
-aws s3 cp s3://redf4rth-saveme/saveme.tar . > /tmp/1800 2>&1
-
-tar -xvf saveme.tar                         > /tmp/1900 2>&1
-rm saveme.tar                               > /tmp/2000 2>&1
